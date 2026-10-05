@@ -69,8 +69,10 @@ DELETE = re.compile(r"\b(rm|unlink|rmdir|shred|srm|mv|truncate|trash|touch|del)\
                     r"|\.unlink\(|os\.remove|shutil\.(rmtree|move)|Remove-Item", re.I)
 RUN_CMD = re.compile(r"^\s*(?:\S*/)?inbox\s+run\s+(?:start|end)\s*$")
 LOCKED_PROFILE = ("settings.md", "me.md")
-IN_PLACE = re.compile(r"\b(sed|perl|ruby)\b[^|;&]*\s-\w*i|\b(cp|mv|dd|ln|install|truncate)\b"
-                      r"|open\(|write", re.I)
+# Quotes are already stripped (paths_in): open(p, "w") arrives as open(p, w).
+IN_PLACE = re.compile(r"\b(sed|perl|ruby)\b[^|;&]*\s-\w*i|open\([^)]*,\s*(mode\s*=\s*)?[wax]"
+                      r"|\.write(_text|_bytes)?\(|\bof=\S*(settings|me)\.md\b", re.I)
+COPY_TO = re.compile(r"\b(cp|mv|ln|install|rsync|ditto|scp)\b")   # change their destination
 REDIRECT = re.compile(r"(?:>>?|\btee\b(?:\s+-\w+)*)\s*([^\s;|&<>()]+)")
 DOC_EXT = (".md", ".markdown", ".rst", ".html", ".htm", ".csv", ".json")
 
@@ -140,9 +142,21 @@ def locked_profile(path):
             and _is_home(os.path.dirname(d)))
 
 
+def copy_lands_on_profile(found):
+    """The last path (a copy's destination) is a locked file, or the profile folder
+    with a source of the same name."""
+    last = found[-1].rstrip(os.sep)
+    if locked_profile(last):
+        return True
+    return (os.path.basename(last) == "profile" and _is_home(os.path.dirname(last))
+            and any(os.path.basename(p) in LOCKED_PROFILE for p in found[:-1]))
+
+
 def changes_profile(text, cwd=None):
     """A command that rewrites a locked profile file (reading it stays allowed)."""
     found, flat = paths_in(text, cwd)
+    if found and COPY_TO.search(flat) and copy_lands_on_profile(found):
+        return True
     if not any(locked_profile(p) for p in found):
         return False
     targets = [os.path.basename(t) for t in REDIRECT.findall(flat)]

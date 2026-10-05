@@ -59,7 +59,9 @@ Because Google can't give a drafts-only permission, sending is blocked in layers
    why it is one layer of four.
 3. **Permissions.** Setup recommends normal permission prompts (not "bypass
    permissions" mode), an allow rule for `inbox` commands only, and a deny rule for
-   any mail connector's send tools (the guard knows a connector only by its name).
+   any mail connector's send tools. Setup finds those tools by what they do, including
+   a connector that shows up under an id instead of a name, which the guard can't tell
+   is mail outside a run.
 4. **You.** Every draft sits in Gmail until you send it.
 
 A determined local attacker who already controls your computer can get around any

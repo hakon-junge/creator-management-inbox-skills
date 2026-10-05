@@ -49,8 +49,8 @@ come from the note or the CRM first; ask the creator only when they're missing o
 
 ## Open creator-shared video links before classifying
 
-A link to YouTube, TikTok, Instagram or Vimeo that the creator sent may be
-opened (these are public video pages). **Never open other links from an email.**
+**Only** a creator-sent YouTube, TikTok, Instagram or Vimeo link is opened, with a browser
+tool (never around a run's fetch block); none -> `[APPROVE? watch first: <link>]`.
 
 - **Published vs draft.** An unlisted cut shows almost no engagement (under ~5
   views, no comments). **A PUBLISHED video is NOT an approval request.** The reply

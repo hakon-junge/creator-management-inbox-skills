@@ -33,9 +33,9 @@ The goal is the "oh, that's good" moment before any account work.
    account can read it), copies the profile templates, installs the Gmail libraries
    into a private Python environment. Settings start at `provider: demo`.
    - Python missing or too old -> see "Installing Python" below.
-2. Say what's about to happen: "I'll answer six fictional emails as Sam at Fernwell, a
-   made-up app. Nothing is sent." Sells physical products? Offer `demo_profile:
-   ecommerce` in settings.md: eight emails to Imogen at Quillmoss, a skincare brand.
+2. Ask what they sell. An app: "I'll answer six fictional emails as Sam at Fernwell, a
+   made-up app. Nothing is sent." Physical products: set `demo_profile: ecommerce` in
+   settings.md, then say eight emails, as Imogen at Quillmoss, a made-up skincare brand.
 3. Run the `inbox-auto-draft-workflow` skill in full.
 4. Open `~/.claude/inbox/demo-output/index.html` for them (`open <path>` on a Mac).
    Point out three things: the rate counter used real math and never revealed the
@@ -131,10 +131,10 @@ emails still get drafted, but they ask the creator for stats instead of naming a
 - To avoid a prompt on every `inbox` call, add an allow rule to
   `~/.claude/settings.json` -> `"permissions": {"allow": ["Bash(inbox:*)"]}`.
   Show them the change before saving it.
-- If they also have a Gmail or Outlook connector enabled in Claude, suggest denying
-  its send tools in the same file (`"deny": [...]` with the connector's
-  `send`/`reply`/`forward` tool names). The plugin's guard blocks them when the tool name
-  says mail; a deny rule also covers a connector whose name doesn't.
+- A mail connector enabled in Claude (Gmail, Outlook): find its send, reply, forward and
+  trash tools in your own tool list by what they do - in the Claude app the server part
+  is often an id (`mcp__1a2b3c4d__send_message`), which the guard can't tell is mail
+  outside a run. Propose `"deny"` rules for those exact names in the same file.
 
 ## Installing Python
 
