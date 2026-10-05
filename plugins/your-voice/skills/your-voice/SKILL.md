@@ -1,15 +1,11 @@
 ---
 name: your-voice
 description: >
-  Write anything in the user's own voice: emails, replies, chat messages, LinkedIn
-  posts, docs. Loads their voice profile (voice.md, built by your-voice-builder) or,
-  until they have one, a strong default voice (direct, warm, clean), picks the
-  register for the channel and enforces their house style (no em dashes, banned words
-  swapped) before the text is handed over. Use for "write this in my voice", "draft a
-  reply", "make this sound like me", "rewrite in my tone", "LinkedIn post in my
-  style", "polish this", and proactively whenever drafting or rewriting anything the
-  user will send or publish under their name. Governs wording only: facts and
-  strategy come from wherever the task gets them.
+  Writes anything in the user's own voice (emails, chat, LinkedIn posts, docs) from
+  their voice.md, or a strong default until they have one, with their house style
+  applied. Use for "write this in my voice", "draft a reply", "make this sound like
+  me", "rewrite in my tone", "polish this", and whenever drafting text the user will
+  send or publish. Wording only.
 ---
 
 # Your voice: write it the way they would

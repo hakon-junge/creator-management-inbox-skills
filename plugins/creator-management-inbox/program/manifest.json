@@ -120,7 +120,7 @@
       "newsletters": {}
     }
   },
-  "block_budgets": {"neutral": {"always_on": 403, "block_1": 777, "block_2": 627, "block_3": 1161, "single_row": 1061}, "saas": {"always_on": 403, "block_1": 866, "block_2": 746, "block_3": 1769, "single_row": 1123}, "ecommerce": {"always_on": 403, "block_1": 1048, "block_2": 788, "block_3": 1715, "single_row": 1149}},
+  "block_budgets": {"neutral": {"always_on": 393, "block_1": 773, "block_2": 619, "block_3": 1151, "single_row": 1046}, "saas": {"always_on": 393, "block_1": 862, "block_2": 738, "block_3": 1759, "single_row": 1105}, "ecommerce": {"always_on": 393, "block_1": 1044, "block_2": 780, "block_3": 1705, "single_row": 1134}},
   "block_targets": {"about": "design §3 goals per block (lines, worst case); block_budgets are the enforced ceilings, lowered by `python3 tests/test_repo.py --write-baseline` as files shrink", "neutral": {"always_on": 440, "block_1": 890, "block_2": 990, "block_3": 1655, "single_row": 1750}, "saas": {"always_on": 440, "block_1": 960, "block_2": 1120, "block_3": 2205, "single_row": 1750}, "ecommerce": {"always_on": 440, "block_1": 1130, "block_2": 1110, "block_3": 2215, "single_row": 1750}},
   "thread_binding": "When more than one budget-model variant is on, each thread binds to one at triage: a thread tied to a named campaign or brief -> budget-campaign-pot; an established creator outside any campaign -> budget-always-on; anything ambiguous -> the first value listed in program.md. Two variants never load for one thread."
 }

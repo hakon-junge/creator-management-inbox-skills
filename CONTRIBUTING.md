@@ -2,7 +2,8 @@
 
 Creator Management Inbox is maintained by Fluencrs. For now **pull requests are
 maintainer-only**, but the playbook gets better from real-world feedback, and
-that's where you come in.
+that's where you come in. Everyone taking part follows the
+[code of conduct](CODE_OF_CONDUCT.md).
 
 ## Support scope
 

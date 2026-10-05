@@ -1,12 +1,9 @@
 ---
 name: voice-builder
 description: >
-  Build or update the voice profile (voice.md) the inbox drafts use: reads recent sent
-  emails (read-only), a short interview, writes voice.md in their private profile, sets
-  house style, proves it with sample replies. Use during inbox setup, when inbox drafts
-  sound generic or keep getting the same edit, or when comms-style finds voice.md
-  unfilled. With the Your Voice plugin installed, its your-voice-builder builds the one
-  voice both use.
+  Builds or updates the voice (voice.md) the inbox drafts use, from sent emails and a
+  short interview. Use during inbox setup or when inbox drafts sound generic. With the
+  Your Voice plugin installed, hand off to your-voice-builder: one voice for both.
 ---
 
 # Voice builder

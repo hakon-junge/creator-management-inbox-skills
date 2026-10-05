@@ -1,6 +1,10 @@
 ---
 name: company-context
-description: Resolves every {{TOKEN}} the creator-management-inbox skills use (company, product, offer, rates, affiliate terms, payment terms, tools, escalation contact) from the user's own profile files in ~/.claude/inbox/profile/. Load it whenever another inbox skill needs a concrete fact about the user's company or deals, and before asserting any price, rate, commission, payment term or product claim in a draft. It never invents a value - an unfilled token means "unknown", and the calling skill leaves that claim out or asks. Also use it when the user asks "what does my profile say about X" or wants to update a fact.
+description: >
+  Looks up facts in the user's inbox profile (company, offer, rates, affiliate and
+  payment terms, tools, contacts) and fills the {{TOKEN}} placeholders the inbox
+  skills use. Load before any draft states a price, term or product claim; it never
+  invents a value. Also for "what does my profile say about X" or updating a fact.
 ---
 
 # Company context: the user's facts

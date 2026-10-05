@@ -1,15 +1,10 @@
 ---
 name: rate-engine
 description: >
-  The numbers behind every creator money conversation: the OPEN offer, the TARGET to
-  land and the private MAX walk-away, plus how a creator's ask reads against your band.
-  Runs on the user's own rate bands (rates.md) with `inbox rate`, or - for teams with a
-  data warehouse - on benchmarks computed from their own paid history. Also sets up
-  those bands: a guided interview about how the user prices today, or built from a list
-  of their past deals. Use for "what should I offer X", "is their ask reasonable",
-  "price this collab", "what's our max", "counter this rate", renewals, and "set up my
-  rates" / "build my rate bands". The engine computes numbers; negotiation-playbook
-  decides the move; comms-style words it.
+  Computes the OPEN offer, the TARGET and the private MAX for a creator deal from the
+  user's own rate bands, and how a creator's ask compares. Also sets the bands up, by
+  interview or from past deals. Use for "what should I offer X", "is their ask
+  reasonable", "what's our max", "price this collab", "set up my rates".
 ---
 
 # Rate engine
