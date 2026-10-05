@@ -1,8 +1,8 @@
 # Contributing
 
-Creator Management Inbox is maintained by Fluencrs. For now **pull requests are
-maintainer-only**, but the playbook gets better from real-world feedback, and
-that's where you come in.
+Creator Management Inbox is maintained by Fluencrs (Håkon Junge and Yuliia Maryniak).
+For now **pull requests are maintainer-only**, but the playbook gets better from
+real-world feedback, and that's where you come in.
 
 ## Support scope
 

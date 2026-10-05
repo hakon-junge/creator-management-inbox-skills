@@ -212,5 +212,6 @@ want your profile gone too.
 - **Ideas and questions:** [Discussions](../../discussions).
 - If this saves you time, a star helps other partnership people find it.
 
-Maintained by [Fluencrs](https://github.com/hakon-junge). See [CONTRIBUTING.md](CONTRIBUTING.md).
+Maintained by Fluencrs: [Håkon Junge](https://github.com/hakon-junge) and
+[Yuliia Maryniak](https://github.com/yuliiahq). See [CONTRIBUTING.md](CONTRIBUTING.md).
 Licensed [MIT](LICENSE).

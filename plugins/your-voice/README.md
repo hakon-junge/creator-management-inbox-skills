@@ -59,4 +59,4 @@ plugin: the helper script has no network access. To write in your voice Claude r
 your samples, so that text is processed by Anthropic's Claude models under your
 Claude account's terms.
 
-Licensed [MIT](../../LICENSE). Maintained by Fluencrs.
+Licensed [MIT](../../LICENSE). Maintained by Fluencrs (Håkon Junge and Yuliia Maryniak).
