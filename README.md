@@ -10,11 +10,11 @@ Built for people who run creator partnerships - brand-side partnership managers,
 founders doing influencer marketing themselves, and anyone answering creators,
 UGC makers and affiliates who is short on time.
 
-> **Try it in 10 minutes without connecting anything.** The demo answers six
+> **Try it in about 15 minutes without connecting anything.** The demo answers six
 > fictional creator emails (a rate counter, a script review, a renewal, a
 > reschedule, an affiliate question and an email that tries to trick the AI), so
 > you can judge the drafts before you give it access to anything. Sell physical
-> products? Set `demo_profile: ecommerce` in settings.md for eight emails to a
+> products? Ask Claude to *switch to the e-commerce demo* for eight emails to a
 > skincare brand: seeding, a late post, usage rights, an unpaid invoice, a payment scam.
 
 ---
@@ -59,10 +59,12 @@ Full walkthrough: [docs/HOW-IT-WORKS.md](docs/HOW-IT-WORKS.md).
 
 - **Claude Code** - in the Claude desktop app (Code tab) or the terminal.
   [Install guide](https://code.claude.com/docs/en/setup).
-- **A Mac, Linux, or Windows with WSL**, and Python 3.9+ (Macs already have it;
-  Claude will help if not).
-- **Gmail** (Google Workspace or personal). Outlook is next on the roadmap.
-- About **10 minutes** for the demo, **30-45 minutes** for the full setup.
+- **A Mac, Linux, or Windows with WSL**, and Python 3.9+. A Mac has it, but the first
+  use may ask to install Apple's free developer tools: click Install and wait a few
+  minutes. Claude will help on other systems.
+- **Gmail** (Google Workspace or personal). Outlook is planned for v1.1; Your Voice can
+  already learn from an Outlook connector.
+- About **15 minutes** for the demo, **30-45 minutes** for the full setup.
 
 ### Step 1 - Install (2 minutes)
 
@@ -94,7 +96,7 @@ That's it. Claude runs the `inbox-setup` skill and guides you through:
 
 | Stage | Time | What happens |
 |---|---|---|
-| 1. Demo | 10 min | Six fictional emails answered (eight in the e-commerce demo); open the drafts in your browser |
+| 1. Demo | 15 min | Six fictional emails answered (eight in the e-commerce demo); open the drafts in your browser |
 | 2. Connect Gmail | 15 min | Your own private Google connection ([guide](plugins/creator-management-inbox/skills/inbox-setup/references/connect-gmail.md)) |
 | 3. Program + profile | 15-25 min | How your program runs (always-on or campaigns, budget, what success means, how you set fees), then your company facts from your website |
 | 4. Your voice | 10 min | Built from your sent emails + a short interview |
@@ -185,7 +187,8 @@ needs you to press send. Google has no
 than promise more: [SECURITY.md](SECURITY.md).
 
 **Does it work with Outlook?** Not yet - Gmail first. Outlook is planned for v1.1
-(same skills, a second connector). Watch the repo or open a Discussion.
+(same skills, a second connector). Your Voice can already learn your style from an
+Outlook connector. Watch the repo or open a Discussion.
 
 **What does it cost?** The skills are free and MIT-licensed. You need a Claude plan
 that includes Claude Code. Google Cloud for the Gmail connection is free.

@@ -735,8 +735,14 @@ class Hook(unittest.TestCase):
                     f"cd {TMP}/profile && echo x | tee -a me.md"):
             self.assertIn("deny", self.bash(cmd, active=True), cmd)
             self.assertEqual("", self.bash(cmd), cmd)
+        for cmd in (f"python3 -c \"open('{me}', 'a').write('x')\"", f"dd if=/tmp/x of={settings}",
+                    f"ln -sf /tmp/x {me}", f"mv {settings} /tmp/settings.md",
+                    f"{copy} /tmp/settings.md {TMP}/profile/", f"mv /tmp/me.md {TMP}/profile"):
+            self.assertIn("deny", self.bash(cmd, active=True), cmd)
         for cmd in (f"cat {me}", f"head -20 {settings}", f"cat {me} 2>/dev/null",
-                    f"echo note >> {TMP}/profile/house-rules.md"):
+                    f"echo note >> {TMP}/profile/house-rules.md",
+                    f"{copy} {settings} /tmp/settings-copy.md", f"grep -n write {me}",
+                    f"python3 -c \"print(open('{me}').read())\""):
             self.assertEqual("", self.bash(cmd, active=True), cmd)
         voice = {"tool_name": "Edit", "tool_input": {"file_path": os.path.join(
             TMP, "profile", "voice.md"), "old_string": "a", "new_string": "b"}}
