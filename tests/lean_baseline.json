@@ -13,10 +13,10 @@
   "inbox-setup": 157,
   "negotiation-playbook": 318,
   "rate-engine": 57,
-  "voice-builder": 109
+  "voice-builder": 108
  },
  "description_chars": {
-  "comms-style": 565,
+  "comms-style": 549,
   "company-context": 613,
   "content-reviewer": 918,
   "creator-notes": 656,
@@ -24,7 +24,7 @@
   "inbox-setup": 645,
   "negotiation-playbook": 884,
   "rate-engine": 710,
-  "voice-builder": 544
+  "voice-builder": 438
  },
  "file_lines": {
   "program/modules/affiliate.md": 116,
@@ -86,10 +86,10 @@
   "skills/rate-engine/references/README.md": 50,
   "skills/rate-engine/references/setup-rates.md": 40,
   "skills/rate-engine/references/using-the-card.md": 68,
-  "skills/voice-builder/SKILL.md": 109
+  "skills/voice-builder/SKILL.md": 108
  },
- "description_total_chars": 6397,
- "file_lines_total": 5338,
+ "description_total_chars": 6275,
+ "file_lines_total": 5337,
  "always_on": {
   "files": {
    "skills/inbox-auto-draft-workflow/SKILL.md": {
@@ -98,7 +98,7 @@
    },
    "skills/comms-style/SKILL.md": {
     "lines": 78,
-    "words": 676
+    "words": 675
    },
    "skills/inbox-auto-draft-workflow/references/compass.md": {
     "lines": 76,
@@ -106,7 +106,7 @@
    }
   },
   "lines": 403,
-  "words": 3782
+  "words": 3781
  },
  "shared_12_word_runs": {},
  "phrasebook_headings": []

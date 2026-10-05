@@ -761,6 +761,23 @@ class Hook(unittest.TestCase):
         self.assertEqual((p.returncode, p.stdout), (0, ""))
 
 
+class QuietPython(unittest.TestCase):
+    def test_google_end_of_life_warnings_stay_quiet(self):
+        """A stock Mac's Python 3.9 makes Google's libraries warn on every command."""
+        code = ("import sys, warnings; sys.path.insert(0, %r); import inbox; "
+                "warnings.warn_explicit('Python 3.9 past its end of life', FutureWarning, "
+                "'x.py', 1, module='google.auth'); "
+                "warnings.warn('urllib3 v2 only supports OpenSSL 1.1.1+', UserWarning); "
+                "warnings.warn_explicit('keep me', FutureWarning, 'y.py', 1, module='other')"
+                % os.path.join(PLUGIN, "scripts"))
+        p = subprocess.run([sys.executable, "-W", "default", "-c", code],
+                           capture_output=True, text=True, env={**os.environ, "INBOX_HOME": TMP})
+        self.assertEqual(p.returncode, 0, p.stderr)
+        self.assertNotIn("end of life", p.stderr)
+        self.assertNotIn("OpenSSL", p.stderr)
+        self.assertIn("keep me", p.stderr)
+
+
 class DemoSelector(unittest.TestCase):
     def test_demo_dirs(self):
         demo = os.path.join(PLUGIN, "demo")

@@ -4,9 +4,9 @@ description: >
   Write in the user's own voice. Loads their voice profile (voice.md, built by the
   voice-builder skill) plus their house-style settings, and applies them to any
   written output - creator emails, negotiations, content feedback, declines, chat,
-  docs. Use whenever drafting something on the user's behalf: "write this in my voice", "draft a reply", "match my tone", "counter this rate",
-  "how should I say this", and proactively whenever the inbox workflow drafts a
-  creator email. Governs WORDING only; strategy comes from negotiation-playbook,
+  docs. Use for creator emails: "reply to this creator", "counter this rate", "how
+  should I say this to them", and whenever the inbox workflow drafts one (other
+  writing goes to your-voice when that plugin is installed). Governs WORDING only; strategy comes from negotiation-playbook,
   facts from company-context.
 ---
 
@@ -18,17 +18,17 @@ wasn't typed by hand.
 ## Load order (every drafting session)
 
 1. `inbox profile-dir` -> the active profile folder.
-2. **`voice.md`**: the user's voice. It wins every wording question - register, openers,
-   sign-offs, emoji, favourite phrases, the "never" list - including over the mechanics
-   below.
+2. **`voice.md`**: `~/.claude/voice/voice.md` (`$VOICE_HOME`) if Your Voice built one, else
+   the profile's; updates go there too. It wins every wording question (register,
+   openers, emoji, the "never" list), over the mechanics below.
 3. **`settings.md`**: house-style switches (em dashes, banned words, exclamation marks).
    `inbox draft` also enforces them in code, but write them right the first time.
 
 **No voice yet** (`voice.md` still mostly `TODO`)? Write in the neutral default below and
-tell the user once per session: "Drafts will sound generic until you build your voice
-profile - say 'build my voice', it takes about 10 minutes." `references/example-voice.md`
-is a complete fictional profile, the model answer for `voice.md`: never imitate it as the
-user's voice or borrow its name, title or backstory.
+tell the user once per session: "Drafts sound generic until you build your voice - say
+'build my voice', about 10 minutes." `references/example-voice.md` is a complete fictional
+profile, the model answer for `voice.md`: never imitate it as the user's voice or borrow
+its name, title or backstory.
 
 **Identity is not tone.** Whoever runs the workflow signs as themselves: identity from the
 connected mailbox and `me.md`, tone from `voice.md`.
