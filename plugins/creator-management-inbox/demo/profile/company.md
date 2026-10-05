@@ -1,0 +1,26 @@
+# Your company and product (DEMO - fictional)
+
+- `{{COMPANY}}`: Fernwell
+- `{{COMPANY_DOMAIN}}`: yourbrand.example
+- `{{PRODUCT}}`: Fernwell
+- `{{PRODUCT_CATEGORY}}`: study-planning app
+- `{{VALUE_PROP}}`: Fernwell turns a messy list of assignments into a realistic weekly study plan, automatically.
+- `{{CORE_FEATURES}}`:
+  - Week view: drag assignments in, Fernwell builds study blocks around your classes
+  - Streaks: daily study streaks with gentle reminders
+  - Exam mode: counts back from an exam date and spaces revision
+- `{{CREDIT_UNIT}}`: n/a
+- Always say: "Fernwell" (one word, capital F)
+- Never say: "guaranteed better grades", "best app ever", any claim about grades or results we can't prove
+- `{{ICP1}}`: university students juggling several courses
+- `{{ICP2}}`: high-school seniors preparing for exams
+- `{{TARGET_NICHES}}`: study-with-me, student productivity, study tips, exam prep
+- `{{EXCLUDED_NICHES}}`: general lifestyle vlogs (audience doesn't convert), anything aimed at under-13s (brand safety)
+- `{{CURRENCY}}`: USD
+- `{{PLAN_FREE}}`: Free (3 courses)
+- `{{PLAN_TOP}}`: Fernwell Pro (6.99 USD/month)
+- `{{TRIAL_TERMS}}`: 14-day Pro trial, no card needed
+- `{{CREATOR_PROMO_OFFER}}`: 30% off the first year of Pro with the creator's code
+- `{{CREATOR_TRIAL_GRANT}}`: 6 months of Pro, free
+- `{{COMPETITOR_PRIMARY}}`: generic to-do apps
+- `{{DIFFERENTIATORS}}`: builds the plan for you (not just a list); exam countdown spacing

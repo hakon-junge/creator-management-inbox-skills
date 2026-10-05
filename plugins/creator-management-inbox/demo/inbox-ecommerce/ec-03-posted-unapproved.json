@@ -1,0 +1,32 @@
+{
+  "thread_id": "ec-03-posted-unapproved",
+  "scenario": "Content: a post went live without approval, with no #ad and a medical claim (Block 2)",
+  "subject": "Re: Quillmoss x Kenzie - Barrier Reset booking confirmed",
+  "messages": [
+    {
+      "from": "Imogen Marsh <imogen@quillmoss.example>",
+      "to": "Kenzie Ward <kenzie@kenzieglows.example>",
+      "date": "Thu, 24 Sep 2026 17:30:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hi Kenzie,\n\nSo happy to have you on Barrier Reset. Here's the booking:\n\n- Deliverable: 1 TikTok featuring the Dew Barrier Serum, 900 USD (organic repost on our channels included)\n- Draft for approval: by link, by Thursday Oct 1\n- Go-live: Tuesday Oct 6\n- Code: KENZIE20 (20% off until Oct 11)\n- Caption: #ad at the start, plus TikTok's paid-partnership label\n- Claims: please stick to the approved claims in the brief - no claims about acne or any other skin condition\n- PO number: PO-QM-26-0561 (it goes on your invoice in the Supplier Hub after go-live)\n\nBrief: https://quillmoss.example/briefs/barrier-reset\n\nSpeak soon,\nImogen",
+      "subject": "Quillmoss x Kenzie - Barrier Reset booking confirmed"
+    },
+    {
+      "from": "Imogen Marsh <imogen@quillmoss.example>",
+      "to": "Kenzie Ward <kenzie@kenzieglows.example>",
+      "date": "Fri, 02 Oct 2026 14:00:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hi Kenzie,\n\nChecking in on the draft - could you send the link today or Monday so we have time before the 6th?\n\nThanks so much,\nImogen"
+    },
+    {
+      "from": "Kenzie Ward <kenzie@kenzieglows.example>",
+      "to": "imogen@quillmoss.example",
+      "date": "Sun, 04 Oct 2026 21:15:00 +0000",
+      "body": "Hiii Imogen!!\n\nIt's live!! https://tiktok.example/@kenzieglows/video/7301\n\nI had a free afternoon so I just went for it, sorry I didn't send the draft first - I figured you'd rather have it early! It's already at 14k views.\n\nCaption is: \"obsessed with this serum 😍 it literally cleared my acne in 3 days!! code KENZIE20 for 20% off @quillmoss\" and in the video I say it cleared my acne in three days, which honestly it did for me.\n\nLet me know where to send the invoice!\n\nKenzie"
+    }
+  ]
+}

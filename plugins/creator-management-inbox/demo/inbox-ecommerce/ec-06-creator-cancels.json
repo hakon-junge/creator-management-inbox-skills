@@ -1,0 +1,23 @@
+{
+  "thread_id": "ec-06-creator-cancels",
+  "scenario": "Cancellation: a booked creator cancels a week before go-live and offers to pay the kill fee (Block 1)",
+  "subject": "Re: Quillmoss x Amara - Barrier Reset booking confirmed",
+  "messages": [
+    {
+      "from": "Imogen Marsh <imogen@quillmoss.example>",
+      "to": "Amara Osei <amara@amaraosei.example>",
+      "date": "Wed, 23 Sep 2026 12:40:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hi Amara,\n\nLovely to have you on Barrier Reset. Here's the booking:\n\n- Deliverable: 1 Instagram Reel, 950 USD (organic repost on our channels included)\n- Draft for approval: by link, by Tuesday Oct 6\n- Go-live: Saturday Oct 10\n- Code: AMARA20 (20% off until Oct 11)\n- PO number: PO-QM-26-0549\n\nYour filming kit ships from Rotterdam this week, and the creator agreement is waiting for you in the Supplier Hub.\n\nSpeak soon,\nImogen",
+      "subject": "Quillmoss x Amara - Barrier Reset booking confirmed"
+    },
+    {
+      "from": "Amara Osei <amara@amaraosei.example>",
+      "to": "imogen@quillmoss.example",
+      "date": "Sat, 03 Oct 2026 10:12:00 +0000",
+      "body": "Hi Imogen,\n\nI'm really sorry to do this, but I have to cancel the Reel for the 10th. My mum is having surgery next week and I'm flying home to look after her for a few weeks, so I won't be able to film or post anything.\n\nI went back through the agreement and saw the clause about a 50% kill fee once the brief is accepted - I completely understand if you need to invoice me for that, or take it some other way. Should I send the products back too?\n\nAgain, I'm so sorry for the short notice.\n\nAmara"
+    }
+  ]
+}

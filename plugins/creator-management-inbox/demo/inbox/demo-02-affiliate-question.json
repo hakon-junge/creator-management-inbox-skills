@@ -1,0 +1,13 @@
+{
+  "thread_id": "demo-02-affiliate-question",
+  "scenario": "Admin: affiliate program questions (Block 1)",
+  "subject": "Affiliate question",
+  "messages": [
+    {
+      "from": "Jonas Weber <jonas@jonasbuilds.example>",
+      "to": "you@yourbrand.example",
+      "date": "Fri, 25 Sep 2026 09:15:00 +0000",
+      "body": "Hey!\n\nQuick one - I signed up to the Fernwell affiliate program last week. How much do I actually earn per signup, and when do payouts happen? Also is there a minimum before I get paid?\n\nCheers,\nJonas"
+    }
+  ]
+}

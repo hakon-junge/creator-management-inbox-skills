@@ -1,0 +1,23 @@
+[
+  {
+    "from": "Robin Vale <robin@northpeak.example>",
+    "labels": [
+      "SENT"
+    ],
+    "date": "2026-09-20T09:00:00Z",
+    "body": "Hi Ola,\n\nThe second cut is ready for you. I kept your intro and moved the product demo earlier, so the first minute does more of the work.\n\nLet me know if the new order feels right to you.\n-- \nRobin Vale\nSIGNATUREMARKER Partnerships Lead"
+  },
+  {
+    "from": "\"robin@northpeak.example\" <spoof@elsewhere.example>",
+    "labels": [
+      "INBOX",
+      "SENT"
+    ],
+    "date": "2026-09-21T09:00:00Z",
+    "body": "SPOOFMARKER A message from someone else whose display name holds your address must not count as yours."
+  },
+  {
+    "date": "2026-09-22T09:00:00Z",
+    "body": "UNVERIFIEDMARKER A message with no sender and no label at all cannot be verified as your own writing."
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "creator-management-inbox-skills",
+  "description": "Claude skills that draft your creator and influencer emails in your own voice. Drafts only - you review and send.",
+  "owner": {
+    "name": "Fluencrs"
+  },
+  "plugins": [
+    {
+      "name": "creator-management-inbox",
+      "description": "Inbox auto-draft for influencer marketing: triage, negotiation playbook, rate engine, content review, creator notes and your own voice. Never sends.",
+      "source": "./plugins/creator-management-inbox",
+      "category": "productivity"
+    },
+    {
+      "name": "your-voice",
+      "description": "Write anything in your own voice: a strong default voice out of the box, your real voice learned from your sent writing and refreshed over time. One plain voice.md you can take anywhere.",
+      "source": "./plugins/your-voice",
+      "category": "productivity"
+    }
+  ]
+}

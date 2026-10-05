@@ -1,0 +1,20 @@
+[
+ {
+  "id": "U01ROBIN",
+  "name": "robin.vale",
+  "real_name": "Robin Vale",
+  "profile": {
+   "real_name": "Robin Vale",
+   "display_name": "Robin"
+  }
+ },
+ {
+  "id": "U02DANA",
+  "name": "dana.okafor",
+  "real_name": "Dana Okafor",
+  "profile": {
+   "real_name": "Dana Okafor",
+   "display_name": "Dana"
+  }
+ }
+]

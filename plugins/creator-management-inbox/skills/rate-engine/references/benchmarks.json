@@ -1,0 +1,123 @@
+{
+ "_README": [
+  "EMPTY SKELETON - this file ships unpopulated on purpose.",
+  "",
+  "Rate bands are derived from one specific company's conversion economics and are",
+  "commercially confidential to that company. Nothing from a previous employer goes",
+  "in here. Generate your own.",
+  "",
+  "HOW TO POPULATE:",
+  "  1. Run references/refresh_queries.sql against your warehouse. It produces five",
+  "     result sets: cohorts.json, geo_cells.json, drift.json, backtest.json and",
+  "     snapshot_all.json.",
+  "  2. Save each result set as JSON in one working directory.",
+  "  3. python3 ../scripts/assemble_benchmarks.py <workdir> --date YYYY-MM-DD",
+  "  4. Copy the regenerated benchmarks.json back over this file. Do NOT copy",
+  "     creators_snapshot.json into version control - it is named-creator data and is",
+  "     covered by .gitignore.",
+  "",
+  "WHILE THIS FILE IS EMPTY the rate engine runs in advisory mode: it explains the",
+  "calculation and names the missing inputs, and refuses to print OPEN/TARGET/MAX.",
+  "See your profile rates.md and deals.md.",
+  "",
+  "MINIMUM SAMPLE before a cohort is trusted: n >= 8 for a CPM band (a percentile of",
+  "a wide distribution), n >= 15 for a value rate (a ratio of sums, far more sensitive",
+  "to a single outlier). Both are configurable in assemble_benchmarks.py.",
+  "",
+  "Anything left null below is a value the assembler computes. Anything marked TODO is",
+  "a decision a human has to make and write down."
+ ],
+
+ "_schema": {
+  "bench.cpm.<level>.<cohort_key>": {
+   "p25": "25th percentile of fee/views*1000 actually paid in this cohort",
+   "med": "median CPM paid",
+   "p75": "75th percentile CPM paid - the top of the defensible band",
+   "n": "number of paid posts behind the band",
+   "window": "'t24' = trailing 24 months (preferred), 'all' = full history (fallback, flagged)",
+   "b_now_med": "median CPM in the current regime period only - use to sanity-check drift",
+   "b_now_n": "sample size in the current regime period",
+   "fee_med": "median absolute fee, for the cases where views are missing"
+  },
+  "bench.value.<level>.<cohort_key>": {
+   "r_cur": "current-regime value per 1k views. THE number EV is built from",
+   "rw": "decay-weighted full-history value per 1k views (half-life 12 months)",
+   "r_now": "current-regime-period pooled value per 1k views",
+   "n_now": "clean posts in the current regime period - drives the shrinkage weight",
+   "s_cur": "conversions per 1k views, same shrinkage treatment as r_cur",
+   "value_per_conversion": "cohort value per conversion - denominator of the creator-facing bar",
+   "n": "clean posts behind the value rate",
+   "prof_window": "share of clean posts where value within the payback window >= fee paid"
+  },
+  "levels": {
+   "pnd": "platform|niche|deliverable - most specific, preferred when n is sufficient",
+   "pn": "platform|niche - first fallback",
+   "p": "platform - last resort",
+   "d": "deliverable across platforms - diagnostic only, not used for lookup"
+  },
+  "cohort_key_format": "lowercase platform, then '|', then the niche string as stored in the CRM, then '|', then the normalised deliverable code"
+ },
+
+ "meta": {
+  "generated": null,
+  "engine_version": 2,
+
+  "value_basis": "TODO - write the exact definition of the value column you summed, the attribution window, and whether promo-code conversions are allocated to in-window posts. Two companies using the same word here mean different things, and the difference lands directly in the walk-away ceiling.",
+
+  "rate_estimator": {
+   "name": "current-regime shrinkage",
+   "formula": "r_cur = (n_now*r_now + k*rw)/(n_now + k)",
+   "k": 25,
+   "rw": "recency-weighted full history, half-life 12 months",
+   "r_now": "current-regime pooled rate, mature posts only",
+   "why": "creator marketing goes through regime changes - conversion per view and views per dollar each move by multiples inside a year. Pure decay-weighting lags a regime change; a pure current-period rate is far too thin on small cohorts. Shrinkage buys the responsiveness of one and the stability of the other, and washes the prior out as n_now grows."
+  },
+
+  "policy": {
+   "ceiling_proven": 1.0,
+   "ceiling_new": 0.8,
+   "target": 0.5,
+   "open": 0.4,
+   "anchor": "median -> p75 of cohort CPM per negotiation doctrine",
+   "floors": {
+    "short_form_min": null,
+    "long_form_min": null,
+    "_note": "TODO - fill from your profile rates.md ({{RATE_FLOOR_SHORTFORM}} / {{RATE_FLOOR_LONGFORM}}). These are policy, not model output: set each at roughly the fee below which a creator feels the production effort isn't worth it. The floor protects the relationship, not the budget."
+   }
+  },
+
+  "geo_mult_cpm": { "T1": 1.0, "T2": null, "T3": null },
+  "geo_mult_value": { "T1": 1.0, "T2": null, "T3": null },
+  "geo_value_blend_factor_t1": null,
+  "geo_note": "T1 = 1.0 by design: cohort value rates are already T1-heavy, so T2/T3 act as discounts only. A cross-platform T1 uplift is deliberately NOT applied - it is dominated by whichever platform/tier combination has a near-zero-value view pool, and applying it would overstate T1 EV at cohort level.",
+
+  "exclusions": {
+   "known_leaks": [],
+   "leak_suspects_conv": [],
+   "cleared": {},
+   "auto_rules": {
+    "promo_leak": "TODO - absolute threshold AND share threshold, two-sided. Default shape: promo-only conversions >= A with promo share >= X%, OR >= B (much larger) with share >= Y%. Catches a code that escaped into coupon aggregators.",
+    "link_leak": "TODO - absolute threshold AND rate threshold. Default shape: link conversions >= C at >= D per 1k views on social platforms. Catches a tracked link pasted somewhere it doesn't belong.",
+    "exceptional_converter": "TODO - the band just below the link-leak rate. High but plausible = a retention priority, not a leak. Screen the ambiguous middle manually and record the verdict in `cleared`."
+   }
+  },
+
+  "corpus": {
+   "posts_with_golive": null,
+   "paid_posts": null,
+   "utm_join_rate": null,
+   "deliverable_labeled_share": null,
+   "boost_flagged_handles": null,
+   "_note": "Sanity counters. If utm_join_rate drops between refreshes, the tracking convention changed and every value rate below is suspect - stop and fix the join before you publish a card."
+  },
+
+  "drift_year_platform": [],
+  "backtest_pay_vs_ev": [],
+  "notes": []
+ },
+
+ "bench": {
+  "cpm": { "pnd": {}, "pn": {}, "p": {}, "d": {} },
+  "value": { "pnd": {}, "pn": {}, "p": {}, "d": {} }
+ }
+}

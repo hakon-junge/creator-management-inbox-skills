@@ -1,0 +1,39 @@
+[
+ {
+  "type": "message",
+  "subtype": "channel_join",
+  "user": "U01ROBIN",
+  "text": "<@U01ROBIN> has joined the channel and this join message is long enough to count as words but must be skipped",
+  "ts": "1789900000.000100"
+ },
+ {
+  "type": "message",
+  "user": "U01ROBIN",
+  "text": "Need a decision on the October slot by Friday.",
+  "ts": "1789900100.000100"
+ },
+ {
+  "type": "message",
+  "user": "U01ROBIN",
+  "text": "Option 1: move it to November. Option 2: keep October with one video. I'd go with 2, <@U02DANA> ok?",
+  "ts": "1789900140.000100"
+ },
+ {
+  "type": "message",
+  "user": "U02DANA",
+  "text": "OTHERPERSONMARKER Works for me, option two it is, and I will tell the creator today so they can plan the shoot.",
+  "ts": "1789900200.000100"
+ },
+ {
+  "type": "message",
+  "user": "U01ROBIN",
+  "text": "Short one, thanks!",
+  "ts": "1789900800.000100"
+ },
+ {
+  "type": "message",
+  "user": "U01ROBIN",
+  "text": "Recap for the team: the October video moves to the second week, the brief stays the same, and payment goes out after go-live as usual. See <https://docs.northpeak.example/brief|the brief>.",
+  "ts": "1789904000.000100"
+ }
+]

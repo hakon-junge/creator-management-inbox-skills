@@ -1,0 +1,14 @@
+{
+  "name": "your-voice",
+  "displayName": "Your Voice",
+  "version": "1.0.0",
+  "description": "Write anything in your own voice - email, chat, LinkedIn, docs. A strong default voice from minute one, your real voice learned from your sent writing, refreshed over time, in one plain voice.md you can take to any AI tool.",
+  "author": {
+    "name": "Fluencrs",
+    "url": "https://github.com/hakon-junge/creator-management-inbox-skills"
+  },
+  "homepage": "https://github.com/hakon-junge/creator-management-inbox-skills",
+  "repository": "https://github.com/hakon-junge/creator-management-inbox-skills",
+  "license": "MIT",
+  "keywords": ["writing", "voice", "tone", "style", "email", "linkedin"]
+}

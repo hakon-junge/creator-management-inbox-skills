@@ -1,0 +1,22 @@
+{
+  "thread_id": "demo-01-rate-counter",
+  "scenario": "Money: a new creator names a rate (Block 3)",
+  "subject": "Re: Fernwell x Maya Codes - paid collab?",
+  "messages": [
+    {
+      "from": "You <you@yourbrand.example>",
+      "to": "Maya Ortiz <maya@mayacodes.example>",
+      "date": "Mon, 21 Sep 2026 10:02:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hey Maya,\n\nI'm Sam from Fernwell's creator partnerships team. Your weekly 'study with me' uploads are some of the most consistent in the productivity space, and your viewers are exactly the students Fernwell is built for.\n\nWould you be open to a paid collaboration with us? Happy to share ideas and scope once I know you're interested.\n\nNo rush either way, just let me know :)"
+    },
+    {
+      "from": "Maya Ortiz <maya@mayacodes.example>",
+      "to": "you@yourbrand.example",
+      "date": "Thu, 24 Sep 2026 16:40:00 +0000",
+      "body": "Hi Sam,\n\nThanks for reaching out, I actually tried Fernwell last semester so this is a fun one.\n\nMy rate for a 60-90 second integration in a long-form video is $2,400 USD. My last 10 videos average around 41,000 views and about 70% of my audience is in the US, UK and Canada.\n\nLet me know if that works!\n\nMaya"
+    }
+  ]
+}

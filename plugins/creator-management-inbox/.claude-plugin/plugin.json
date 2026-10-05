@@ -1,0 +1,14 @@
+{
+  "name": "creator-management-inbox",
+  "displayName": "Creator Management Inbox",
+  "version": "1.0.0",
+  "description": "Drafts replies to your creator and influencer emails in your own voice - negotiation, content feedback, scheduling, renewals - and leaves them in Gmail for you to review. Never sends.",
+  "author": {
+    "name": "Fluencrs",
+    "url": "https://github.com/hakon-junge/creator-management-inbox-skills"
+  },
+  "homepage": "https://github.com/hakon-junge/creator-management-inbox-skills",
+  "repository": "https://github.com/hakon-junge/creator-management-inbox-skills",
+  "license": "MIT",
+  "keywords": ["influencer-marketing", "creator-partnerships", "gmail", "email-drafts", "negotiation"]
+}

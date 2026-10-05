@@ -1,0 +1,27 @@
+# macOS / editors
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets and personal data - never commit these
+token.json
+**/token.json
+client_secret*.json
+**/client_secret*.json
+creators_snapshot.json
+**/creators_snapshot.json
+runs.jsonl
+*.pem
+.env
+.env.*
+
+# Private leak-scan patterns (names that must never appear in this repo)
+.leak-patterns.local

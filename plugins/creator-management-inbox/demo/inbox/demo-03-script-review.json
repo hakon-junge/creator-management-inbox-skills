@@ -1,0 +1,13 @@
+{
+  "thread_id": "demo-03-script-review",
+  "scenario": "Content: a script to review (Block 2)",
+  "subject": "Re: Fernwell integration - script for review",
+  "messages": [
+    {
+      "from": "Priya Nair <priya@priyaplans.example>",
+      "to": "you@yourbrand.example",
+      "date": "Sat, 26 Sep 2026 12:30:00 +0000",
+      "body": "Hi Sam,\n\nHere's my script for the integration, going live on Oct 8. Let me know what you think!\n\n---\n[0:00] Hook: \"I used to lose three hours a week just deciding what to work on.\"\n[0:08] Honestly this app changed my life, it's the best productivity app ever made and it will double your grades.\n[0:20] Walkthrough: I open Fernwell, drag my assignments into the week view, and it builds my study blocks automatically.\n[0:45] Show the streaks screen.\n[0:55] Outro: that's it, go check it out.\n---\n\nPriya"
+    }
+  ]
+}

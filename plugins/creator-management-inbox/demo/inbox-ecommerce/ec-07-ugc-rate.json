@@ -1,0 +1,23 @@
+{
+  "thread_id": "ec-07-ugc-rate",
+  "scenario": "Money: a UGC creator asks the rate for 3 videos with raw files and 90-day paid usage (Block 3)",
+  "subject": "Re: UGC application - Rosie Hale",
+  "messages": [
+    {
+      "from": "Imogen Marsh <imogen@quillmoss.example>",
+      "to": "Rosie Hale <rosie@rosiehale.example>",
+      "date": "Wed, 30 Sep 2026 10:30:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hi Rosie,\n\nThanks for applying - your texture shots are exactly what we look for. We'd love to try UGC for the Dew Barrier Serum.\n\nSend me what you'd want to include (number of videos, length, rights) and I'll come back with our rate.\n\nSpeak soon,\nImogen",
+      "subject": "Re: UGC application - Rosie Hale"
+    },
+    {
+      "from": "Rosie Hale <rosie@rosiehale.example>",
+      "to": "imogen@quillmoss.example",
+      "date": "Fri, 02 Oct 2026 16:48:00 +0000",
+      "body": "Hi Imogen,\n\nAmazing, thank you!\n\nI'd love to do 3 UGC videos for the serum, 20-30 seconds each - one talking-head review, one texture/application, one 'morning routine' style. I'd include the raw files for all three so your team can recut them, and you'd have 90 days of paid usage on Meta and TikTok.\n\nWhat would your rate be for that package? I'm based in Manchester if that matters for sending product.\n\nThanks!\nRosie"
+    }
+  ]
+}

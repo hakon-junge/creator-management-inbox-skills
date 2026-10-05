@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "about": "What each program loads. CORE is true for every brand; a PACK is the business type (program.md `business:`); a MODULE is a program mechanic switched on by the pack's defaults, by the other program.md answers (modifiers) and by an optional `modules: +x, -y` line. `inbox program` reads this file and prints the pack, the modules and the per-block load plan. Module status: `built` (its doctrine lives in its file), `seed` (the rules moved here so far; the full module comes with a later pack), `planned` (no file yet). A file with `when` loads only on that trigger (`base_if` names the program answers that make it load every time); the rules that must hold without a module live in the core. Paths are relative to the plugin root; profile files are not listed.",
+  "blocks": {
+    "always_on": "every run",
+    "block_1": "admin and acks",
+    "block_2": "content review",
+    "block_3": "money and terms"
+  },
+  "core": {
+    "always_on": [
+      {"path": "skills/inbox-auto-draft-workflow/SKILL.md"},
+      {"path": "skills/inbox-auto-draft-workflow/references/compass.md"},
+      {"path": "skills/comms-style/SKILL.md"}
+    ],
+    "block_1": [
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/scheduling.md", "when": "a date, a reschedule (a repeat slip too) or a follow-up"},
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/late-deliverables.md", "when": "a contracted draft or post past its agreed date that the creator hasn't moved"},
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/payments-forms.md", "when": "a fee payment, invoice, VAT or onboarding-form question (a program's own payout terms are its module shape's)"},
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/relationship-edge.md", "when": "a decline, a deal deferred (never a date move), a new contact, an event or B2B"},
+      {"path": "skills/inbox-auto-draft-workflow/references/data.md", "when": "a tracking link, promo code, record change or a lookup beyond the creator's note"},
+      {"path": "skills/creator-notes/SKILL.md", "when": "creating or updating a creator note (reading one is `inbox creator <name>`)"}
+    ],
+    "block_2": [
+      {"path": "skills/content-reviewer/SKILL.md"},
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/content-feedback.md"},
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/content-golive.md", "when": "approving a video or final content, a final-green-light script pass, a published video, a launch-campaign code or an offer ending before the post date"},
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/unapproved-post.md", "when": "a post went live without the approval the deal requires"}
+    ],
+    "block_3": [
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/money-core.md"},
+      {"path": "skills/negotiation-playbook/SKILL.md"},
+      {"path": "skills/rate-engine/references/using-the-card.md", "skip_if_pricing_only": ["commission", "gifting"]},
+      {"path": "skills/rate-engine/SKILL.md", "when": "set up rates, warehouse benchmarks or bulk pricing", "skip_if_pricing_only": ["commission", "gifting"]},
+      {"path": "skills/negotiation-playbook/references/architecture.md", "when": "more than one line or surface on the table, or a package"},
+      {"path": "skills/negotiation-playbook/references/plays.md", "when": "a matched scenario or an end-of-deal renegotiation"},
+      {"path": "skills/negotiation-playbook/references/value-levers.md", "when": "pushback on the rate"},
+      {"path": "skills/negotiation-playbook/references/voss-deep.md", "when": "live pushback on our number (a second round or more), or a complex multi-party thread"},
+      {"path": "skills/negotiation-playbook/references/defensive-tells.md", "when": "they run negotiation plays on us"},
+      {"path": "skills/negotiation-playbook/references/call-mode.md", "when": "the creator asked for a call"},
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/follow-ups.md", "when": "our money offer went unanswered"},
+      {"path": "skills/inbox-auto-draft-workflow/references/shapes/cancellations.md", "when": "either side cancels a booked deal, or asks what is owed on one (kill fee, product, a refund)"}
+    ]
+  },
+  "packs": {
+    "saas": {
+      "status": "built",
+      "label": "software or an app: signups and paid subscriptions",
+      "default_modules": {"affiliate": "recurring", "views-pricing": null, "budget-always-on": null, "usage-rights": "included-first-deal", "agency-talent": "prefer-direct"},
+      "files": {"block_2": [{"path": "program/packs/saas/review-rubric.md"}], "block_3": [{"path": "program/packs/saas/PACK.md"}]}
+    },
+    "ecommerce": {
+      "status": "built",
+      "label": "physical products sold online: orders and revenue",
+      "default_modules": {"gifting-seeding": null, "usage-rights": "priced", "exclusivity": null, "budget-campaign-pot": null, "affiliate": "per-order", "agency-talent": "engage", "procurement-payments": null},
+      "files": {"block_2": [{"path": "program/packs/ecommerce/review-rubric.md"}, {"path": "program/packs/ecommerce/PACK.md", "when": "the content, caption or brief makes a product claim (what it does, a result, safety, who it's for): the regulated list"}], "block_3": [{"path": "program/packs/ecommerce/PACK.md"}]}
+    },
+    "b2b": {
+      "status": "planned",
+      "label": "something other businesses buy: demos and qualified leads",
+      "default_modules": {"procurement-payments": null, "agency-talent": "engage", "usage-rights": "priced", "exclusivity": null, "budget-always-on": null},
+      "files": {}
+    }
+  },
+  "modules": {
+    "affiliate": {"status": "built", "requires": "affiliate", "files": {"block_1": [{"path": "program/modules/affiliate.shape.md", "when": "an affiliate rate, earning window or payout question; a decline; a performance-data ask"}], "block_3": [{"path": "program/modules/affiliate.md", "when": "the reply names or prices the affiliate (Track A, a pushback or exit rung, a re-book package, a recalibration); commission asked about; renewing a creator on commission; a no-flat-fee verdict or a no-fee door; a creator-owned channel or multi-line pitch", "base_if": ["mode: lead", "budget: no-cash"]}]}},
+    "views-pricing": {"status": "built", "files": {"block_3": [{"path": "program/modules/views-pricing.md", "when": "a fee priced, countered or explained by views (median views x CPM): a first number or counter, a net-new first money conversation, a re-book at the engine's views rate, a mechanism dispute, a per-1K decline, a placement with no views band; not a recalibration priced on the creator's own results (conversion bar)"}]}},
+    "budget-always-on": {"status": "built", "group": "budget-model", "files": {"block_3": [{"path": "program/modules/budget-always-on.md", "when": "a renewal, re-book or top-up; a recalibration or its rejection; a volume ask or a single high-fee piece; a new creator's yes without numbers (Door B); late delivery; an upfront-payment ask; \"other brands pay more\""}]}},
+    "budget-campaign-pot": {"status": "built", "group": "budget-model", "files": {"block_3": [{"path": "program/modules/budget-campaign-pot.md", "when": "a thread bound to a campaign, brief or seasonal moment (thread_binding): an offer or budget question, its dates, a moved or late post date, re-booking for the next one"}]}},
+    "gifting-seeding": {"status": "built", "files": {"block_1": [{"path": "program/modules/gifting-seeding.md", "when": "product to send or already sent: a yes to a kit, a variant or shade pick, an address, a ship date, a missing or wrong package, a region we don't ship to, a post after a kit"}, {"path": "program/modules/gifting-seeding.shape.md", "when": "product to send or already sent: a yes to a kit, a variant or shade pick, an address, a ship date, a missing or wrong package, a region we don't ship to, a post after a kit"}], "block_3": [{"path": "program/modules/gifting-seeding.md", "when": "product in a money thread: cash asked on top of a kit, a kit with or instead of a fee, a giveaway prize", "base_if": ["pricing: gifting", "budget: no-cash"]}]}},
+    "usage-rights": {"status": "built", "files": {"block_3": [{"path": "program/modules/usage-rights.md", "when": "rights are in the offer or the thread: any first-deal cash offer (mode included-first-deal); a renewal, re-book, recalibration, cut or volume ask from a returning creator; amplification, paid usage, an ad code (Spark or partnership ads), raw files or a repost; rights on their rate card or asked about"}]}},
+    "exclusivity": {"status": "built", "files": {"block_3": [{"path": "program/modules/exclusivity.md", "when": "exclusivity in the thread: a brief that needs it, a line on their rate card or contract, a hold they have with another brand"}]}},
+    "agency-talent": {"status": "built", "files": {"block_1": [{"path": "program/modules/agency-talent.md", "when": "an agency or manager sends a list of creators"}], "block_3": [{"path": "program/modules/agency-talent.md", "when": "a manager or agency speaks for the creator"}]}},
+    "procurement-payments": {"status": "built", "files": {"block_1": [{"path": "program/modules/procurement-payments.md", "when": "when they get paid, an invoice, a PO number, a tax form, the supplier portal, or a payment late against the terms"}, {"path": "program/modules/procurement-payments.shape.md", "when": "when they get paid, an invoice, a PO number, a tax form, the supplier portal, or a payment late against the terms"}], "block_3": [{"path": "program/modules/procurement-payments.md", "when": "a deal accepted (the close carries the invoice steps), or payment terms raised in a negotiation (faster terms, upfront)"}]}},
+    "ugc-per-asset": {"status": "seed", "files": {"block_3": [{"path": "program/modules/ugc-per-asset.md", "when": "a UGC creator or a UGC ask: content made for our channels, priced per asset", "base_if": ["success: content"]}]}}
+  },
+  "modifiers": {
+    "business": {
+      "ecommerce": {"pack": "ecommerce"},
+      "saas": {"pack": "saas"},
+      "b2b": {"pack": "b2b"}
+    },
+    "model": {
+      "always-on": {"variant": "budget-always-on"},
+      "campaigns": {"variant": "budget-campaign-pot"},
+      "seasonal": {"variant": "budget-campaign-pot"},
+      "mix": {"alias": ["always-on", "campaigns"]}
+    },
+    "budget": {
+      "per-creator": {},
+      "monthly-pot": {"variant": "budget-campaign-pot"},
+      "campaign-pot": {"variant": "budget-campaign-pot"},
+      "no-cash": {"off": ["views-pricing"], "on_by_pack": {"ecommerce": ["gifting-seeding"], "*": ["affiliate"]}}
+    },
+    "success": {
+      "sales": {},
+      "signups": {},
+      "reach": {},
+      "content": {"on": ["ugc-per-asset"]},
+      "pipeline": {}
+    },
+    "pricing": {
+      "views": {"on": ["views-pricing"]},
+      "rate-card": {},
+      "their-quote": {},
+      "commission": {"on": ["affiliate"], "mode": {"affiliate": "lead"}},
+      "gifting": {"on": ["gifting-seeding"]}
+    },
+    "deal_shape": {
+      "test-then-scale": {"param": "the two-piece rule (budget-model)"},
+      "one-off": {},
+      "ambassador": {"param": "the itemized package from the first deal (budget-model)"}
+    },
+    "creator_types": {
+      "influencers": {},
+      "ugc": {"on": ["ugc-per-asset"]},
+      "affiliates": {"on": ["affiliate"]},
+      "agency-talent": {"on": ["agency-talent"]},
+      "podcasters": {},
+      "newsletters": {}
+    }
+  },
+  "block_budgets": {"neutral": {"always_on": 403, "block_1": 777, "block_2": 627, "block_3": 1161, "single_row": 1061}, "saas": {"always_on": 403, "block_1": 866, "block_2": 746, "block_3": 1769, "single_row": 1123}, "ecommerce": {"always_on": 403, "block_1": 1048, "block_2": 788, "block_3": 1715, "single_row": 1149}},
+  "block_targets": {"about": "design §3 goals per block (lines, worst case); block_budgets are the enforced ceilings, lowered by `python3 tests/test_repo.py --write-baseline` as files shrink", "neutral": {"always_on": 440, "block_1": 890, "block_2": 990, "block_3": 1655, "single_row": 1750}, "saas": {"always_on": 440, "block_1": 960, "block_2": 1120, "block_3": 2205, "single_row": 1750}, "ecommerce": {"always_on": 440, "block_1": 1130, "block_2": 1110, "block_3": 2215, "single_row": 1750}},
+  "thread_binding": "When more than one budget-model variant is on, each thread binds to one at triage: a thread tied to a named campaign or brief -> budget-campaign-pot; an established creator outside any campaign -> budget-always-on; anything ambiguous -> the first value listed in program.md. Two variants never load for one thread."
+}

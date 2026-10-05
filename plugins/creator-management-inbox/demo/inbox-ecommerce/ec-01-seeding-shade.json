@@ -1,0 +1,24 @@
+{
+  "thread_id": "ec-01-seeding-shade",
+  "scenario": "Seeding: a gifted creator's PR box is missing a shade; she asks for a bigger size and a post date (Block 1)",
+  "subject": "Re: Your Quillmoss PR box is on its way",
+  "messages": [
+    {
+      "from": "Imogen Marsh <imogen@quillmoss.example>",
+      "to": "Saoirse Byrne <saoirse@saoirseskin.example>",
+      "date": "Fri, 18 Sep 2026 14:10:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hi Saoirse,\n\nThanks for filling in the seeding form. Your Barrier Reset box left our Rotterdam warehouse today:\n\n- Dew Barrier Serum 30 ml\n- Cloudmilk Cleanser 150 ml\n- Veil Skin Tint SPF 30 in 04 Honey and 05 Golden (the two shades you picked)\n\nTracking: https://track.quillmoss.example/QM-EU-48213\n\nNo strings at all - it's yours to try. If you ever do share it, just label it as gifted.\n\nThanks so much,\nImogen",
+      "subject": "Your Quillmoss PR box is on its way"
+    },
+    {
+      "from": "Saoirse Byrne <saoirse@saoirseskin.example>",
+      "to": "imogen@quillmoss.example",
+      "date": "Sun, 04 Oct 2026 19:42:00 +0000",
+      "body": "Hi Imogen,\n\nThe box arrived on Thursday, thank you so much, the packaging is gorgeous! I've been using the serum every morning.\n\nTwo things though - there was only one tint in there (04 Honey), no sign of the Golden one. Is it coming separately? Honey is a bit light on me at the moment so Golden is the one I really wanted to try.\n\nAnd I hope this isn't cheeky, but is there any chance of getting the bigger 50ml serum instead of the little one? I go through serum so fast and I'd love to give it a proper go before I talk about it.\n\nAlso - is there a date you'd like me to post by? Happy to do a GRWM with it.\n\nSaoirse x",
+      "subject": "Re: Your Quillmoss PR box is on its way"
+    }
+  ]
+}

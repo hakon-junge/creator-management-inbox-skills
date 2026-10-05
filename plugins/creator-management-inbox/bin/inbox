@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Launcher for the creator-management-inbox command line tool.
+# Claude Code puts this plugin's bin/ on PATH, so skills just run `inbox ...`.
+# Uses the private Python environment `inbox setup` creates, else system python3.
+set -euo pipefail
+SELF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+ROOT="$(dirname "$SELF_DIR")"
+HOME_DIR="${INBOX_HOME:-$HOME/.claude/inbox}"
+PY="$HOME_DIR/venv/bin/python"
+if [ ! -x "$PY" ]; then
+  PY="$(command -v python3 || true)"
+fi
+if [ -z "$PY" ]; then
+  echo "Python 3 was not found. On a Mac run: xcode-select --install   (see docs/SETUP.md)" >&2
+  exit 1
+fi
+exec "$PY" "$ROOT/scripts/inbox.py" "$@"

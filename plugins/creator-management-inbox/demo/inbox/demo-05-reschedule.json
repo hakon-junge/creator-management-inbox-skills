@@ -1,0 +1,13 @@
+{
+  "thread_id": "demo-05-reschedule",
+  "scenario": "Admin: creator moves a committed date (Block 1)",
+  "subject": "Re: Fernwell - go-live dates",
+  "messages": [
+    {
+      "from": "Ava Chen <ava@avamakes.example>",
+      "to": "you@yourbrand.example",
+      "date": "Mon, 28 Sep 2026 08:20:00 +0000",
+      "body": "Hi Sam,\n\nSo sorry, I need to push my Fernwell video again. Can we do sometime next month instead of Oct 3? Things are just really busy right now.\n\nAva"
+    }
+  ]
+}

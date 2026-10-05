@@ -1,0 +1,30 @@
+name: Draft quality
+description: A draft wasn't what an experienced partnerships manager would send.
+labels: [draft-quality]
+body:
+  - type: markdown
+    attributes:
+      value: "Use a FICTIONAL or fully redacted example: no real creator names, emails, fees or brands."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of email
+      options: [Rate / negotiation, Renewal, Content feedback, Go-live, Scheduling, Decline, Affiliate question, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: incoming
+    attributes:
+      label: The email it answered (fictionalised)
+    validations:
+      required: true
+  - type: textarea
+    id: draft
+    attributes:
+      label: What the draft said
+  - type: textarea
+    id: better
+    attributes:
+      label: What you'd have sent instead, and why
+    validations:
+      required: true

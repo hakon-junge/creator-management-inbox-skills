@@ -1,0 +1,113 @@
+{
+ "_about": "Lean ratchet for tests/test_repo.py (Lean). Measured sizes; tests fail if anything grows. Lower them with `python3 tests/test_repo.py --write-baseline`. spec_allowlist is edited by hand and only shrinks.",
+ "spec_allowlist": {
+  "skill_md_over_500_lines": [],
+  "description_over_1024_chars": []
+ },
+ "skill_lines": {
+  "comms-style": 78,
+  "company-context": 64,
+  "content-reviewer": 395,
+  "creator-notes": 226,
+  "inbox-auto-draft-workflow": 249,
+  "inbox-setup": 157,
+  "negotiation-playbook": 318,
+  "rate-engine": 57,
+  "voice-builder": 109
+ },
+ "description_chars": {
+  "comms-style": 565,
+  "company-context": 613,
+  "content-reviewer": 918,
+  "creator-notes": 656,
+  "inbox-auto-draft-workflow": 862,
+  "inbox-setup": 645,
+  "negotiation-playbook": 884,
+  "rate-engine": 710,
+  "voice-builder": 544
+ },
+ "file_lines": {
+  "program/modules/affiliate.md": 116,
+  "program/modules/affiliate.shape.md": 24,
+  "program/modules/agency-talent.md": 65,
+  "program/modules/budget-always-on.md": 148,
+  "program/modules/budget-campaign-pot.md": 61,
+  "program/modules/exclusivity.md": 46,
+  "program/modules/gifting-seeding.md": 40,
+  "program/modules/gifting-seeding.shape.md": 59,
+  "program/modules/procurement-payments.md": 33,
+  "program/modules/procurement-payments.shape.md": 50,
+  "program/modules/ugc-per-asset.md": 8,
+  "program/modules/usage-rights.md": 105,
+  "program/modules/views-pricing.md": 120,
+  "program/packs/ecommerce/PACK.md": 88,
+  "program/packs/ecommerce/review-rubric.md": 73,
+  "program/packs/saas/PACK.md": 54,
+  "program/packs/saas/review-rubric.md": 119,
+  "skills/comms-style/SKILL.md": 78,
+  "skills/comms-style/references/example-voice.md": 118,
+  "skills/company-context/SKILL.md": 64,
+  "skills/company-context/templates/affiliate.md": 25,
+  "skills/company-context/templates/company.md": 66,
+  "skills/company-context/templates/creator-template.md": 40,
+  "skills/company-context/templates/data-sources.md": 28,
+  "skills/company-context/templates/deals.md": 56,
+  "skills/company-context/templates/me.md": 52,
+  "skills/company-context/templates/program.md": 68,
+  "skills/company-context/templates/rates.md": 52,
+  "skills/company-context/templates/settings.md": 37,
+  "skills/company-context/templates/voice.md": 37,
+  "skills/content-reviewer/SKILL.md": 395,
+  "skills/creator-notes/SKILL.md": 226,
+  "skills/inbox-auto-draft-workflow/SKILL.md": 249,
+  "skills/inbox-auto-draft-workflow/references/compass.md": 76,
+  "skills/inbox-auto-draft-workflow/references/data.md": 127,
+  "skills/inbox-auto-draft-workflow/references/self-tuning.md": 31,
+  "skills/inbox-auto-draft-workflow/references/shapes/cancellations.md": 38,
+  "skills/inbox-auto-draft-workflow/references/shapes/content-feedback.md": 83,
+  "skills/inbox-auto-draft-workflow/references/shapes/content-golive.md": 123,
+  "skills/inbox-auto-draft-workflow/references/shapes/follow-ups.md": 44,
+  "skills/inbox-auto-draft-workflow/references/shapes/late-deliverables.md": 41,
+  "skills/inbox-auto-draft-workflow/references/shapes/money-core.md": 126,
+  "skills/inbox-auto-draft-workflow/references/shapes/payments-forms.md": 112,
+  "skills/inbox-auto-draft-workflow/references/shapes/relationship-edge.md": 173,
+  "skills/inbox-auto-draft-workflow/references/shapes/scheduling.md": 98,
+  "skills/inbox-auto-draft-workflow/references/shapes/unapproved-post.md": 26,
+  "skills/inbox-setup/SKILL.md": 157,
+  "skills/inbox-setup/references/connect-gmail.md": 131,
+  "skills/negotiation-playbook/SKILL.md": 318,
+  "skills/negotiation-playbook/references/architecture.md": 78,
+  "skills/negotiation-playbook/references/call-mode.md": 38,
+  "skills/negotiation-playbook/references/defensive-tells.md": 40,
+  "skills/negotiation-playbook/references/plays.md": 146,
+  "skills/negotiation-playbook/references/value-levers.md": 123,
+  "skills/negotiation-playbook/references/voss-deep.md": 85,
+  "skills/rate-engine/SKILL.md": 57,
+  "skills/rate-engine/references/README.md": 50,
+  "skills/rate-engine/references/setup-rates.md": 40,
+  "skills/rate-engine/references/using-the-card.md": 68,
+  "skills/voice-builder/SKILL.md": 109
+ },
+ "description_total_chars": 6397,
+ "file_lines_total": 5338,
+ "always_on": {
+  "files": {
+   "skills/inbox-auto-draft-workflow/SKILL.md": {
+    "lines": 249,
+    "words": 2379
+   },
+   "skills/comms-style/SKILL.md": {
+    "lines": 78,
+    "words": 676
+   },
+   "skills/inbox-auto-draft-workflow/references/compass.md": {
+    "lines": 76,
+    "words": 727
+   }
+  },
+  "lines": 403,
+  "words": 3782
+ },
+ "shared_12_word_runs": {},
+ "phrasebook_headings": []
+}

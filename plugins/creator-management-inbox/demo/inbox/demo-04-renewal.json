@@ -1,0 +1,13 @@
+{
+  "thread_id": "demo-04-renewal",
+  "scenario": "Money: final video live, creator asks about another round (Block 3)",
+  "subject": "Re: Round 2?",
+  "messages": [
+    {
+      "from": "Leo Grant <leo@leograntstudies.example>",
+      "to": "you@yourbrand.example",
+      "date": "Sun, 27 Sep 2026 18:05:00 +0000",
+      "body": "Hey Sam,\n\nThe third video went live yesterday, link: https://video.example/watch/leo-fernwell-3\n\nReally enjoyed this one. Would you be up for another round? Same setup as before works for me, 3 videos at $900 each.\n\nLeo"
+    }
+  ]
+}

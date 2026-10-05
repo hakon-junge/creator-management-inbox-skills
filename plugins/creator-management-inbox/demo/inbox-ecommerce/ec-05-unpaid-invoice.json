@@ -1,0 +1,14 @@
+{
+  "thread_id": "ec-05-unpaid-invoice",
+  "scenario": "Payments: 'I invoiced 45 days ago and haven't been paid' (Block 1)",
+  "subject": "Summer Glow invoice - still unpaid",
+  "messages": [
+    {
+      "from": "Danielle Brooks <danielle@daniellebrooks.example>",
+      "to": "imogen@quillmoss.example",
+      "date": "Mon, 05 Oct 2026 13:05:00 +0000",
+      "body": "Hi Imogen,\n\nI invoiced Quillmoss for the Summer Glow video on August 21 - that's 45 days ago now, and your terms are net 30. I still haven't received anything.\n\nCould you look into it? This is the first time I've had an issue with you guys, so I'm assuming something just got stuck somewhere.\n\nThanks,\nDanielle",
+      "subject": "Summer Glow invoice - still unpaid"
+    }
+  ]
+}

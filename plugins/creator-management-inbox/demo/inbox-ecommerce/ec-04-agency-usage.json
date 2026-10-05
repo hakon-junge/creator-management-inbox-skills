@@ -1,0 +1,24 @@
+{
+  "thread_id": "ec-04-agency-usage",
+  "scenario": "Money: an agency rate card asks about paid usage and a Spark code, and adds an exclusivity clause (Block 3)",
+  "subject": "Re: Lola x Quillmoss - Holiday Glow?",
+  "messages": [
+    {
+      "from": "Imogen Marsh <imogen@quillmoss.example>",
+      "to": "Lola Vance <lola@lolavance.example>",
+      "date": "Mon, 28 Sep 2026 15:00:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hi Lola,\n\nYour June GRWM with our PR box was lovely - 112k views on a post we didn't even ask for.\n\nWe're booking creators for Holiday Glow (Nov 16 - Dec 6), featuring Veil Skin Tint SPF 30, and we'd love to have you for a paid TikTok. Would you be open to it? If so, send me your rate and your audience split and I'll put a booking together.\n\nThanks so much,\nImogen",
+      "subject": "Lola x Quillmoss - Holiday Glow?"
+    },
+    {
+      "from": "Harriet Cole <harriet@brightlinetalent.example>",
+      "to": "imogen@quillmoss.example",
+      "date": "Fri, 02 Oct 2026 18:22:00 +0000",
+      "body": "Hi Imogen,\n\nThanks for reaching out to Lola - I look after her brand partnerships at Brightline Talent, so I'll take it from here (Lola cc'd).\n\nLola loved the PR box and is keen. Her current rate card:\n\n- TikTok video (60-90s): 3,800 USD\n- Instagram Reel: 3,400 USD\n- Story set (3 frames): 1,200 USD\n\nOrganic repost on your channels is included. Lola's median TikTok views are around 85k, with 64% of her audience in the US.\n\nTwo questions before we send paperwork:\n\n1. What would you pay on top for 90-day paid usage on the TikTok?\n2. Would you want a Spark Ads code? Our standard is 30 days included with paid usage, longer codes on request.\n\nPlease also note that all of Lola's paid partnerships carry our standard 60-day category exclusivity (skincare and SPF), at 25% of the total fee.\n\nWe'd want to lock dates by Oct 16. Looking forward to working together.\n\nBest,\nHarriet Cole\nSenior Talent Manager, Brightline Talent",
+      "cc": "Lola Vance <lola@lolavance.example>"
+    }
+  ]
+}

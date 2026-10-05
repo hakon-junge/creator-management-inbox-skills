@@ -1,0 +1,31 @@
+{
+  "thread_id": "ec-02-late-golive",
+  "scenario": "Late post: a booked creator missed go-live and asks to post after the campaign window (Block 1)",
+  "subject": "Re: Barrier Reset - draft for approval",
+  "messages": [
+    {
+      "from": "Imogen Marsh <imogen@quillmoss.example>",
+      "to": "Mara Ellison <mara@maraellison.example>",
+      "date": "Tue, 29 Sep 2026 16:05:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hi Mara,\n\nApproved - the Reel and the story set both look great, and the texture shot at the start is lovely.\n\n- Go-live: Thursday Oct 1\n- Code: MARA20 (20% off, live until the campaign closes on Sunday Oct 11)\n- Caption: #ad at the start, plus the paid-partnership label\n\nSpeak soon,\nImogen"
+    },
+    {
+      "from": "Imogen Marsh <imogen@quillmoss.example>",
+      "to": "Mara Ellison <mara@maraellison.example>",
+      "date": "Fri, 02 Oct 2026 15:20:00 +0000",
+      "labels": [
+        "SENT"
+      ],
+      "body": "Hi Mara,\n\nI didn't see the Reel go up yesterday - is everything OK? The approved version is good to go whenever you post it.\n\nThanks so much,\nImogen"
+    },
+    {
+      "from": "Mara Ellison <mara@maraellison.example>",
+      "to": "imogen@quillmoss.example",
+      "date": "Mon, 05 Oct 2026 08:47:00 +0000",
+      "body": "Hi Imogen,\n\nSo sorry for going quiet! Last week ran away from me - I've been travelling for a wedding and I'm only home on Thursday.\n\nCan it go next week instead? I was thinking Tuesday the 13th, I'll have more time to do the stories properly then.\n\nMara"
+    }
+  ]
+}

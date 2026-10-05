@@ -1,0 +1,26 @@
+name: Bug
+description: Something doesn't work (setup, Gmail, a command, a crash).
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Never paste tokens, client secrets, or real emails. Redact names and addresses."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: asked
+    attributes:
+      label: What did you ask Claude to do?
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `inbox doctor`
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version (from /plugin) and your OS
