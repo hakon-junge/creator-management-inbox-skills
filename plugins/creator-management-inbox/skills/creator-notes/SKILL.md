@@ -1,14 +1,10 @@
 ---
 name: creator-notes
-description: >-
-  Keep one evergreen note per creator - how to work with them, their cadence and
-  reliability, results, commercial snapshot, pushbacks and live next steps - so every
-  draft and negotiation starts from real history instead of memory. Notes are private
-  Markdown files in ~/.claude/inbox/creators/ (or a CRM note, for teams that use one).
-  Use when the user says "add <creator> to my creator notes", "what do we know about
-  <creator>", "update <creator>'s note", "log this call with <creator>", "import my
-  creators from this sheet", or after a call; and whenever the inbox workflow learns a
-  fact worth keeping. Holds professional context and volunteered facts only.
+description: >
+  One private note per creator (how to work with them, reliability, results, deal
+  history, next steps), so drafts start from real history. Use for "what do we know
+  about <creator>", "update <creator>'s note", "log this call", "import my creators
+  from this sheet", and when the inbox learns a fact worth keeping.
 ---
 
 # Creator notes

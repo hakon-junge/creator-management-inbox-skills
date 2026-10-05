@@ -1,17 +1,12 @@
 ---
 name: negotiation-playbook
 description: >
-  The shared rate and terms negotiation doctrine - the voice-neutral STRATEGY layer for any
-  creator money conversation: countering an offer, a budget or rate question, a
-  deliverables, volume or usage-rights trade, a big-gap decline, a manager or agency
-  pricing for a creator, an end-of-deal renegotiation, or a money thread gone quiet. Built
-  on Chris Voss's "Never Split the Difference" plus a pricing mechanism the creator can see.
-  Load it whenever a draft touches rates, fees, deliverable counts, usage rights or
-  money-tied timelines; program-specific doctrine loads from the `inbox program` load plan.
-  Governs WHAT to do - levers, sequence, plays - never wording: `comms-style` words it,
-  `rate-engine` supplies every number. Triggers: "counter this rate", "what should I
-  offer", "price this collab", "is their ask reasonable", "they countered", "structure
-  this deal", "they ghosted".
+  Strategy for creator money conversations: counters, budget and rate questions,
+  usage-rights and volume trades, agency pricing, renewals, big-gap declines, money
+  threads gone quiet. Load whenever a draft touches fees, deliverables or usage
+  rights. Decides the move; rate-engine supplies the numbers, comms-style the words.
+  Triggers: "counter this rate", "what should I offer", "they countered", "they
+  ghosted".
 ---
 
 # Negotiation Playbook - Rates & Terms

@@ -1,14 +1,11 @@
 ---
 name: inbox-setup
 description: >
-  Guided setup for the creator-management-inbox plugin, for people who may never have used a
-  terminal. Takes the user from "just installed" to "real drafts in my Gmail" in
-  stages: run the demo (10 min), connect Gmail (15 min), fill the profile from their
-  website and a short interview, build their voice, set up their rates, then a first
-  real run. Use when the user says "set up my inbox", "set up my Creator Management Inbox", "get started", "connect my
-  Gmail", "import my Gmail client file", "set up my inbox profile", "disconnect my
-  Gmail", "help me install Python", "is everything set up?", or when any inbox command
-  reports something missing.
+  Guided setup for Creator Management Inbox, for people new to the terminal: the demo
+  first, then Gmail, profile, voice, rates and a first real run. Use for "set up my
+  inbox", "get started", "connect my Gmail", "switch to the e-commerce demo", "help me
+  install Python", "is everything set up?", or when an inbox command reports something
+  missing.
 ---
 
 # Inbox setup

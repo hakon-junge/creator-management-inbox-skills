@@ -1,13 +1,10 @@
 ---
 name: comms-style
 description: >
-  Write in the user's own voice. Loads their voice profile (voice.md, built by the
-  voice-builder skill) plus their house-style settings, and applies them to any
-  written output - creator emails, negotiations, content feedback, declines, chat,
-  docs. Use for creator emails: "reply to this creator", "counter this rate", "how
-  should I say this to them", and whenever the inbox workflow drafts one (other
-  writing goes to your-voice when that plugin is installed). Governs WORDING only; strategy comes from negotiation-playbook,
-  facts from company-context.
+  Wording rules for creator emails in the user's own voice (their voice.md plus house
+  style). Use whenever the inbox drafts a creator email, or for "reply to this
+  creator", "counter this rate", "how should I say this to them". Wording only:
+  strategy comes from negotiation-playbook, facts from company-context.
 ---
 
 # Comms style: sound like the user

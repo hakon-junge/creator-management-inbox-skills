@@ -1,18 +1,10 @@
 ---
 name: content-reviewer
 description: >
-  Review influencer content submissions and generate the approve /
-  request-edits decision plus creator-ready feedback. Use whenever a creator's
-  script, talking points, draft, or final content needs review - short-form video
-  (Instagram/TikTok), a long-form integration, dedicated video, or carousel. Triggers:
-  "review this video", "review the script", "check [creator]'s draft", "is this good
-  to go live", "give feedback on this content", or any submission arriving as a
-  video file + transcript, transcript only, unlisted YouTube link, cloud-drive
-  link, or video-stream link. Applies the structural rubric (native fit, hook, body,
-  CTA, captions, audio-visual coherence, logo and brand checks) plus the business
-  pack's own gates, with gated must-haves, and outputs feedback in
-  the operator's voice with timestamped, copy-paste-ready edit requests. Apply
-  proactively whenever influencer content is evaluated before go-live.
+  Reviews a creator's script, draft or posted video (short-form, long-form, carousel)
+  and returns approve or request-edits with timestamped, copy-paste edit requests. Use
+  for "review this video", "review the script", "check [creator]'s draft", "is this
+  good to go live", and whenever creator content needs review before go-live.
 ---
 
 # Influencer content reviewer

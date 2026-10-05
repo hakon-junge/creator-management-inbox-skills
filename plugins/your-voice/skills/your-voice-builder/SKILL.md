@@ -1,16 +1,10 @@
 ---
 name: your-voice-builder
 description: >
-  Build or refresh the user's personal voice profile (voice.md) from their own past
-  writing, so everything drafted for them sounds like them. Reads their sent email
-  (Gmail or Outlook connector), exports (mbox, eml, LinkedIn, Slack) or pasted text,
-  keeps only messages they really wrote, measures their habits with a stdlib
-  script, and writes a compact voice.md with real examples and frequencies. Confirms
-  with a short summary and three sample rewrites instead of a long interview.
-  Refresh mode re-reads recent writing, applies well-evidenced wording changes and
-  asks only about changes of stance. Use for "build my voice", "learn my writing
-  style", "update my voice", "refresh my voice", "my drafts sound generic", "import
-  my voice", and when your-voice finds no voice.md and the user agrees.
+  Builds or refreshes the user's voice profile (voice.md) from their own writing: sent
+  mail through a Gmail or Outlook connector, exports or pasted text, confirmed with
+  three sample rewrites. Use for "build my voice", "learn my writing style", "update
+  my voice", "refresh my voice", "import my voice", "my drafts sound generic".
 ---
 
 # Your voice builder

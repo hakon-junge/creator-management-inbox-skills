@@ -1,17 +1,10 @@
 ---
 name: inbox-auto-draft-workflow
 description: >
-  Runs the inbox auto-draft routine end to end with zero input: reads every unread email
-  in the connected mailbox, drafts the replies the account owner would send, in THEIR
-  voice, and leaves each threaded under the original message (still unread) for
-  glance-and-send. Use whenever someone says "run my inbox", "draft replies to my unread
-  emails", "draft my unread emails", "handle my creator emails", or asks to process unread
-  partnership or creator email - and for a single thread ("reply to this email from X").
-  Also runs the demo inbox. An ORCHESTRATOR: triages every thread into difficulty BLOCKS
-  (admin/acks -> content review -> money and terms), works them lightest-first and loads
-  each block's authority skills only when needed. Facts come from the user's profile,
-  never from memory. NEVER sends: it only creates drafts; a human reviews and sends every
-  one.
+  Drafts replies to every unread creator email in the connected mailbox (or the demo
+  inbox) in the user's voice, and leaves each as a draft under the original for
+  glance-and-send. Never sends. Use for "run my inbox", "draft my unread emails",
+  "handle my creator emails", or one thread ("reply to this email from X").
 ---
 
 # Inbox auto-draft workflow (autonomous orchestrator)
