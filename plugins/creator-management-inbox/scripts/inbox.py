@@ -14,6 +14,12 @@ import re
 import shutil
 import subprocess
 import sys
+import warnings
+
+# On a stock Mac (Python 3.9) Google's libraries warn about Python's end of life on
+# every command. It is noise to the user, not an error, so it stays quiet.
+warnings.filterwarnings("ignore", category=FutureWarning, module=r"google(\.|$)")
+warnings.filterwarnings("ignore", message=r"urllib3 v2 only supports OpenSSL")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 

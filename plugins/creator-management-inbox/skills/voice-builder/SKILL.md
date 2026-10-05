@@ -1,20 +1,19 @@
 ---
 name: voice-builder
 description: >
-  Build or update the user's personal voice profile (voice.md) so every draft sounds
-  like them. Reads their recent sent emails (read-only), runs a short plain-English
-  interview, writes voice.md in their private profile, sets their house-style settings,
-  and proves it with sample replies they approve. Use when the user says "build my
-  voice", "create my comms style", "make drafts sound like me", "my drafts sound
-  generic", "update my voice", or after they edit several drafts the same way. Also
-  use when comms-style finds voice.md still unfilled.
+  Build or update the voice profile (voice.md) the inbox drafts use: reads recent sent
+  emails (read-only), a short interview, writes voice.md in their private profile, sets
+  house style, proves it with sample replies. Use during inbox setup, when inbox drafts
+  sound generic or keep getting the same edit, or when comms-style finds voice.md
+  unfilled. With the Your Voice plugin installed, its your-voice-builder builds the one
+  voice both use.
 ---
 
 # Voice builder
 
-Goal: a `voice.md` good enough that the user sends drafts without editing them.
-The model answer for structure and depth is
-`../comms-style/references/example-voice.md` (fictional). Read it first.
+**Your Voice installed?** Use its `your-voice-builder` instead and stop: one voice for
+every tool, which `comms-style` reads first. Else the goal is a `voice.md` they send
+unedited; the model answer is `../comms-style/references/example-voice.md` (fictional).
 
 Time budget: about 10 minutes of the user's time. Do the heavy lifting yourself.
 

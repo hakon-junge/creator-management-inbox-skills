@@ -11,7 +11,7 @@ if [ ! -x "$PY" ]; then
   PY="$(command -v python3 || true)"
 fi
 if [ -z "$PY" ]; then
-  echo "Python 3 was not found. On a Mac run: xcode-select --install   (see docs/SETUP.md)" >&2
+  echo "Python 3 was not found. On a Mac run: xcode-select --install   (see "What you need" in the README)" >&2
   exit 1
 fi
 exec "$PY" "$ROOT/scripts/inbox.py" "$@"
